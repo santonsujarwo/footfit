@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/theme.css" />
+
+     <!-- <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">-->
+      <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <title>Footer</title>
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-6 m-auto text-center">
+            <h2>Welcome Back!</h2>
+            <a href="#" class="btn btn-outline-primary btn-block">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="register">
+      <div class="container-fluid bg-grey py-5">
+        <div class="container">
+          <div class="row">
+              <div class="col-6 m-auto">
+                <h3 class="my-5 text-center font-weight-bold">Hi, I'm new here</h3>
+                <form>
+                  <div class="form-group">
+                    <label for="firstname"><strong>First Name*</strong></label>
+                    <input type="text" class="border-0 form-control" id="firstname" aria-describedby="firstname" placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname"><strong>Last Name*</strong></label>
+                    <input type="text" class="border-0 form-control" id="lastname" aria-describedby="lastname" placeholder="Last name">
+                  </div>
+                  <div class="form-group">
+                    <label for="address"><strong>Address*</strong></label>
+                    <input type="text" class="border-0 form-control" id="address" aria-describedby="address" placeholder="Ex. Longway Street">
+                  </div>
+                  <div class="form-group form-password">
+                    <label for="password"><strong>Password</strong></label>
+                    <div class="input-group" id="show_hide_password">
+                      <input class="border-0 form-control" type="password" placeholder="Password">
+                      <div class="input-group-append">
+                        <span class="border-0 bg-white input-group-text py-0" id="password">
+                          <a href=""><i class="d-flex align-items-center las la-eye la-2x text-show" aria-hidden="true"></i></a>
+                        </span>
+                      </div>
+                    </div>
+                    <small>*Your password needs to be at least 6 characters</small>
+                  </div>
+                  <div class="form-group form-password">
+                    <label for="password"><strong>Re-Enter Your Pasword</strong></label>
+                    <div class="input-group" id="show_hide_repassword">
+                      <input class="border-0 form-control" type="password" placeholder="Re-Enter Password">
+                      <div class="input-group-append">
+                        <span class="border-0 bg-white input-group-text py-0" id="repassword">
+                          <a href=""><i class="d-flex align-items-center las la-eye la-2x text-show" aria-hidden="true"></i></a>
+                        </span>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="border-0 form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">
+                      Yes, I wish to receive occasional emails about special offers, new products and exclusive promotions. I can cancel my subscription at any time. (Optional)
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block my-4">Register</button>
+                  <p>By creating an account, you agree to the <a href="#" class="text-underline"><strong>Terms and Conditions</strong></a> and <a href="#"><strong>Privacy Policy</strong></a> of Footfit.</p>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+   
+    <style>
+      .form-password .la-eye:before,
+      .form-password .la-eye-slash:before{
+        color: var(--dark);
+        margin-right: 10px;
+        font-family: 'Line Awesome Free' !important;
+        font-size: 20px;
+        font-weight: 900;
+      }
+      .form-password .text-show,
+      .form-password .text-hide{
+        font-size: 12px;
+        font-family: 'Heebo', sans-serif;
+      }
+      .form-password .las{
+        color: var(--dark);
+      }
+      .text-show, .text-hide{
+        position: relative;
+      }
+      .text-show:after{
+      content: "show";
+      position: relative;
+      
+      }
+      .text-hide:after{
+        content: "hide";
+        position: relative;
+      }
+    </style>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/vendor/jquery/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+     $(document).ready(function() {
+        $("#show_hide_password a").on('click', function(event) {
+            event.preventDefault();
+            if($('#show_hide_password input').attr("type") == "text"){
+                $('#show_hide_password input').attr('type', 'password');
+                $('#show_hide_password i').addClass( "la-eye-slash text-hide");
+                $('#show_hide_password i').removeClass( "la-eye text-show" );
+            }else if($('#show_hide_password input').attr("type") == "password"){
+                $('#show_hide_password input').attr('type', 'text');
+                $('#show_hide_password i').removeClass( "la-eye-slash text-hide" );
+                $('#show_hide_password i').addClass( "la-eye text-show" );
+            }
+        });
+        $("#show_hide_repassword a").on('click', function(event) {
+            event.preventDefault();
+            if($('#show_hide_repassword input').attr("type") == "text"){
+                $('#show_hide_repassword input').attr('type', 'password');
+                $('#show_hide_repassword i').addClass( "la-eye-slash text-hide");
+                $('#show_hide_repassword i').removeClass( "la-eye text-show" );
+            }else if($('#show_hide_repassword input').attr("type") == "password"){
+                $('#show_hide_repassword input').attr('type', 'text');
+                $('#show_hide_repassword i').removeClass( "la-eye-slash text-hide" );
+                $('#show_hide_repassword i').addClass( "la-eye text-show" );
+            }
+        });
+    });
+    </script>
+  </body>
+</html>
