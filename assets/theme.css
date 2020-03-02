@@ -1,6 +1,7 @@
 :root{
 	--dark: #000000;
 	--darkgrey: #767676;
+	--deepgrey: #808080;
 	--lightgrey: #afafaf;
 	--thingrey: #f7f6f5;
 	--white: #ffffff;
@@ -74,6 +75,9 @@ input[type=number]:focus,
 	font-weight: bold;
 	font-size: 14px;
 }
+.btn{
+	font-size: 14px;
+}
 .btn-primary, 
 .btn-primary:active,
 .btn-primary:hover, 
@@ -99,6 +103,9 @@ input[type=number]:focus,
 }
 .color-lightgrey{
 	color: var(--lightgrey);
+}
+.color-deepgrey{
+	color: var(--deepgrey);
 }
 .bg-white{
 	background-color: var(--white);
@@ -136,6 +143,12 @@ input[type=number]:focus,
 .w-10{
 	width: 20%;
 }
+.la-1x{
+	font-size: 18px !important;
+}
+.la-2x{
+	font-size: 24px !important;
+}
 /*-----------------------------------------
 Product Summary
 -------------------------------------------*/
@@ -166,9 +179,9 @@ Product Featured
 .product-featured .product-summary .rating-product .la-star{
 	color: var(--yellow);
 }
-.product-featured .product-summary .rating-product .la-2x{
+/*.product-featured .product-summary .rating-product .la-2x{
       font-size: 24px;
-}
+}*/
 .product-featured .product-summary .title-product{
 	font-size: 30px;
 }
