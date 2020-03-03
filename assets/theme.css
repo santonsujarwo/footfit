@@ -55,6 +55,27 @@ input[type=number]:focus,
 [contenteditable].form-control:focus {
   box-shadow: inset 0 -1px 0 #fff;
 }
+.custom-control-input:checked ~ .custom-control-label::before{
+	color: var(--white);
+	background-color: var(--white);
+	border-color: var(--darkgrey);
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after{
+	background-image: none;
+	background-color: rgba(var(--orange));
+	border-radius: 100%;
+}
+.custom-control-label::before{
+	width: 16px;
+	height: 16px;
+}
+.custom-control-label::after{
+	top: 0.44rem;
+    left: -1.3rem;
+    display: block;
+    width: 10px;
+    height: 10px;
+}
 .form-control::-webkit-input-placeholder{
 	color: #eaeaea;
 	font-weight: bold;
@@ -93,7 +114,9 @@ input[type=number]:focus,
 	border-color: rgba(var(--orange));
 	color: var(--dark);
 }
-
+.color-dark{
+	color: var(--dark);
+}
 .color-red{
 	color: var(--red);
 }
@@ -148,6 +171,66 @@ input[type=number]:focus,
 }
 .la-2x{
 	font-size: 24px !important;
+}
+.form-password .la-eye:before,
+.form-password .la-eye-slash:before{
+    color: var(--dark);
+    margin-right: 10px;
+    font-family: 'Line Awesome Free' !important;
+    font-size: 20px;
+    font-weight: 900;
+}
+.form-password .text-show,
+.form-password .text-hide{
+    font-size: 12px;
+     font-family: 'Heebo', sans-serif;
+}
+.form-password .las{
+    color: var(--dark);
+}
+.text-show, .text-hide{
+    position: relative;
+}
+.text-show:after{
+    content: "show";
+    position: relative;
+}
+.text-hide:after{
+    content: "hide";
+    position: relative;
+}
+.btn-select .btn-light,
+.btn-select .btn-light:hover,
+.btn-select .btn-light:focus, 
+.btn-select .btn-light.focus,
+.btn-select .btn-light.disabled, 
+.btn-select .btn-light:disabled,
+.btn-select .btn-light:not(:disabled):not(.disabled):active, 
+.btn-select .btn-light:not(:disabled):not(.disabled).active,
+.btn-select .show > .btn-light.dropdown-toggle  {
+  	background-color: transparent;
+	border: 1px solid var(--dark);
+	color: var(--dark);
+	border-radius: 0;
+	font-weight: bold;
+}
+.btn-select .bootstrap-select .dropdown-menu .active,
+.btn-select .bootstrap-select .dropdown-menu li a:hover{
+	background: var(--grey);
+	color: var(--dark);
+}
+.btn-select .bootstrap-select .dropdown-menu li a{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+}
+.btn-select .bootstrap-select .dropdown-menu{
+	font-size: 14px;
+	border-radius: 0;
+	border-color: var(--dark);
+}
+.btn-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 170px;
 }
 /*-----------------------------------------
 Product Summary
@@ -343,12 +426,71 @@ Product Review
 .subscribe-form .btn-primary{
 	width: 200px;
 }
+/*---------------------------------------------
+Myaccount
+-----------------------------------------------*/
+.myaccount .list-group-item.active{
+    background: transparent;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.myaccount .btn-outline-dark:hover{
+    background: rgba(var(--orange));
+    border-color: rgba(var(--orange));
+}
+/*.myaccount .account-summary .row-head .head-address{
+      justify-content: space-evenly;
+}*/
 
 
 
+@media(min-width:1024px){
+	.border-lg-bottom{
+ 		border-bottom: 1px solid #ccc;
+ 	} 
+ 	.btn-lg-outline-dark {
+	  color: #343a40;
+	  border-color: #343a40;
+	}
 
-@media(max-width:640px){
+	.btn-lg-outline-dark:hover {
+	  color: #fff;
+	  background-color: rgba(var(--orange));
+	  border-color: rgba(var(--orange));
+	}
+
+	.btn-lg-outline-dark:focus, .btn-lg-outline-dark.focus {
+	  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+	}
+
+	.btn-lg-outline-dark.disabled, .btn-lg-outline-dark:disabled {
+	  color: #343a40;
+	  background-color: transparent;
+	}
+	.btn-80{
+		width: 64px;
+	}
+}
+@media(max-width:768px){
+	.btn-lg-outline-dark{
+		color: #fff;
+	  	background-color: rgba(var(--orange));
+	  	border-color: rgba(var(--orange));	
+	}
+	.btn-xs-block{
+		display: block;
+	}
+	/*.myaccount .list-group{
+		display: inline-block;
+	}
 	.myaccount .left-column .list-group-item{
+		float: left;
 		width: 50%;
-	}	
+	}*/
+
+}
+@media(max-width:640px){
+	/*.myaccount .left-column .list-group-item{
+		width: 50%;
+	}	*/
 }
