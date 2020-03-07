@@ -8,9 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/theme.css" />
-
-     <!-- <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">-->
-      <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <title>Help &amp; Faqs</title>
   </head>
@@ -19,19 +17,18 @@
       <div class="container">
         <div class="row flex-lg-row flex-column-reverse">
           <div class="col-lg-2 col-md-2 col-12 left-column">
-            <ul class="list-group border-0">
-              <li class="list-group-item border-0 px-0 py-1"><a href="my-account.html">My Account</a></li>
-              <li class="list-group-item border-0 px-0 py-1"><a href="my-address.html">My Address</a></li>
-              <li class="list-group-item border-0 px-0 py-1"><a href="#">My Points</a></li>
-              <li class="list-group-item border-0 px-0 py-1"><a href="#">Whistlists</a></li>
-              <li class="list-group-item border-0 px-0 py-1 active"><a href="my-newsletter.html">My Newsletter</a></li>
-              <li class="list-group-item border-0 px-0 py-1"><a href="#">My Gift Cards</a></li>
-              <li class="list-group-item border-0 px-0 py-1"><a href="#">Returns Items</a></li>
-              <li class="list-group-item border-0 px-0 py-1"><a href="#">Help &amp; Faqs</a></li>
-              <li class="list-group-item border-0 px-0 py-1"><a href="#">My Voucher</a></li>
-              <li class="list-group-item border-0 px-0 py-1"><a href="#">Transactions</a></li>
-              <li class="list-group-item border-0 p-0"><a href="#">Reviews</a></li>
-        
+             <ul class="list-group border-0 row flex-row">
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="my-account.html">My Account</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="my-address.html">My Address</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="my-points.html">My Points</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="wishlists.html">Wishlists</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="my-newsletter.com">My Newsletter</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="#">My Gift Cards</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="#">Returns Items</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1 active"><a href="help-faqs.html">Help &amp; Faqs</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="#">My Voucher</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="#">Transactions</a></li>
+              <li class="list-group-item col-lg-12 col-6 border-0 px-lg-0 py-1"><a href="#">Reviews</a></li>
             </ul>
           </div>
           <div class="col-lg-10 col-md-10 col-12 right-column">
@@ -44,79 +41,303 @@
               
             </div>
             <div class="account-summary">
-              <div class="row-summary flex-column d-lg-flex "><!--[start: row-summary]-->
-                <h3 class="color-orange">Browse answers by category</h3>
-                <div class="row-body d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center mb-3">
-                  <div class="d-flex flex-column mr-2 half-column">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Your fashion fix</label>
+              <div class="entry-content"><!--[start:entry content]-->
+                <h3 class="color-orange mb-4">Browse answers by category</h3>
+                <div class="row mb-5"><!--[start:row]-->
+                  <div class="col-lg-6 col-12">
+                    <div class="media-thumb mb-4">
+                      <img src="assets/images/return-back.png" alt="return" class="img-fluid" width="34" />
+                      <h3 class="color-orange mt-3">Pengembalian Barang dan Dana</h3>
                     </div>
-                    <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
-                  </div>
-                  <div class="d-flex flex-column mr-2 half-column">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Surverys</label>
+                    <div class="accordion" id="return">
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-return1" aria-expanded="true" aria-controls="collapse-return1">Bagaimana cara mengajukan request pengembalian barang atau dana?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-return1" class="collapse" aria-labelledby="heading" data-parent="#return">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-return2" aria-expanded="true" aria-controls="collapse-return2">Berapa lama waktu yang dibutuhkan FootFit untuk memproses request anda?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          
+                          <div id="collapse-return2" class="collapse" aria-labelledby="heading" data-parent="#return">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-return3" aria-expanded="true" aria-controls="collapse-return3">Apa saja syarat dan ketentuan pengembalian barang dan dana?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-return3" class="collapse" aria-labelledby="heading" data-parent="#return">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
                     </div>
-                    <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
-                  </div>
-                </div>
-                <div class="row-body d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center mb-3">
-                  <div class="d-flex flex-column mr-2 half-column">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Your recommendations</label>
+                  </div> 
+                  <div class="col-lg-6 12">
+                    <div class="media-thumb mb-4">
+                      <img src="assets/images/voucher.png" alt="return" class="img-fluid" width="34" />
+                      <h3 class="color-orange mt-3">Voucher, Gift Card dan Promo</h3>
                     </div>
-                    <p>Size Reminder Confirmation</p>
-                  </div>
-                  <div class="d-flex flex-column mr-2 half-column">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Size Reminder Confirmation</label>
+                    <div class="accordion" id="voucher">
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-voucher1" aria-expanded="true" aria-controls="collapse-voucher1">Apa yang terjadi jika saya menggunakan seluruh voucher pada saat yang bersamaan?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          
+                          <div id="collapse-voucher1" class="collapse" aria-labelledby="voucher" data-parent="#voucher">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-voucher2" aria-expanded="true" aria-controls="collapse-voucher2">Apakah voucher dapat digunakan bersama dengan promo dari FootFit?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-voucher2" class="collapse" aria-labelledby="voucher" data-parent="#voucher">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                     <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-voucher3" aria-expanded="true" aria-controls="collapse-voucher3">Bagaimana cara kerja gift card
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-voucher3" class="collapse" aria-labelledby="voucher" data-parent="#voucher">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
                     </div>
-                    <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
-                  </div>
-                </div>
-                <div class="row-body d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center mb-3">
-                  <div class="d-flex flex-column mr-2 half-column">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Your offers &amp; sales</label>
+                  </div> 
+                </div><!--[end:row]-->
+                <div class="row mb-5"><!--[start:row]-->
+                  <div class="col-lg-6 col-12">
+                    <div class="media-thumb mb-4">
+                      <img src="assets/images/wallet.png" alt="return" class="img-fluid" width="34" />
+                      <h3 class="color-orange mt-3">FootFits Points</h3>
                     </div>
-                    <p>Size Reminder Confirmation</p>
-                  </div>
-                  <div class="d-flex flex-column mr-2 half-column">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Your item alerts</label>
+                    <div class="accordion" id="wallet">
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-wallet1" aria-expanded="true" aria-controls="collapse-wallet1">Apa itu FootFit Points?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-wallet1" class="collapse" aria-labelledby="heading" data-parent="#wallet">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-wallet2" aria-expanded="true" aria-controls="collapse-wallet2">Apakah saya bisa menggunakan FootFit Points untuk memproses sebagian dari transaksi saya?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          
+                          <div id="collapse-wallet2" class="collapse" aria-labelledby="heading" data-parent="#wallet">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-wallet3" aria-expanded="true" aria-controls="collapse-wallet3">Apa saja syarat dan ketentuan pengembalian barang dan dana?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-wallet3" class="collapse" aria-labelledby="heading" data-parent="#wallet">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
                     </div>
-                    <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
-                  </div>
-                </div>
-              </div> <!--[end: row-summary]-->
-              <div class="row-summary">
-                <h2 class="font-weight-bold">What are you more interested in?</h2>
-                <div class="row-body d-flex flex-column flex-lg-row mb-3">
-                  <div class="custom-control custom-radio custom-control-inline quarter-column">
-                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline1">Women's Apparel</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline quarter-column">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">Men's Apparel</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline quarter-column">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">Kid's Apparel</label>
-                  </div>
-                </div>
-                <a href="#" class="btn btn-primary">Subscribe to the FootFit Newsletter</a>
-                <small class="d-block">By clicking the button above, you agree that we may process your information in accordance with our Privacy Policy.</small>
-              </div>
-
-
-              
+                  </div> 
+                  <div class="col-lg-6 12">
+                    <div class="media-thumb mb-4">
+                      <img src="assets/images/delivery.png" alt="return" class="img-fluid"  />
+                      <h3 class="color-orange mt-3">Pengiriman</h3>
+                    </div>
+                    <div class="accordion" id="delivery">
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-delivery1" aria-expanded="true" aria-controls="collapse-delivery1">Bagaimana saya dapat menghubungi jasa pengiriman??
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          
+                          <div id="collapse-voucher1" class="collapse" aria-labelledby="voucher" data-parent="#delivery">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-delivery2" aria-expanded="true" aria-controls="collapse-delivery2">Batas waktu pengiriman butuh waktu berapa lama ?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-delivery2" class="collapse" aria-labelledby="voucher" data-parent="#delivery">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                     <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-delivery3" aria-expanded="true" aria-controls="collapse-delivery3">Bagaimana saya bisa mengecek resi? 
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-delivery3" class="collapse" aria-labelledby="voucher" data-parent="#delivery">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                    </div>
+                  </div> 
+                </div><!--[end:row]-->
+                <div class="row mb-5"><!--[start:row]-->
+                  <div class="col-lg-6 col-12">
+                    <div class="media-thumb mb-4">
+                      <img src="assets/images/insurance.jpg" alt="insurance" class="img-fluid" width="34" />
+                      <h3 class="color-orange mt-3">Asuransi FootFits</h3>
+                    </div>
+                    <div class="accordion" id="insurance">
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-insurance1" aria-expanded="true" aria-controls="collapse-wallet1">Apa itu FootFit Points?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-insurance1" class="collapse" aria-labelledby="heading" data-parent="#insurance">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-insurance2" aria-expanded="true" aria-controls="collapse-insurance2">Apakah saya bisa menggunakan FootFit Points untuk memproses sebagian dari transaksi saya?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          
+                          <div id="collapse-insurance2" class="collapse" aria-labelledby="heading" data-parent="#insurance">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-insurance3" aria-expanded="true" aria-controls="collapse-insurance3">Apa saja syarat dan ketentuan pengembalian barang dan dana?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-insurance3" class="collapse" aria-labelledby="heading" data-parent="#insurance">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                    </div>
+                  </div> 
+                  <div class="col-lg-6 12">
+                    <div class="media-thumb mt-3 mb-4">
+                      <img src="assets/images/more.png" alt="more" class="img-fluid" width="34"  />
+                      <h3 class="color-orange mt-3">Lain - Lain</h3>
+                    </div>
+                    <div class="accordion" id="more">
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-more1" aria-expanded="true" aria-controls="collapse-more1">Bagaimana saya dapat menghubungi jasa pengiriman??
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          
+                          <div id="collapse-more1" class="collapse" aria-labelledby="more" data-parent="#more">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                      <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-more2" aria-expanded="true" aria-controls="collapse-more2">Batas waktu pengiriman butuh waktu berapa lama ?
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-more2" class="collapse" aria-labelledby="more" data-parent="#more">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                     <!--[start:loop]-->
+                      <div class="media d-block mb-2">
+                        <div class="media-heading">
+                          <a class="accordion-toggle"  data-toggle="collapse" data-target="#collapse-more3" aria-expanded="true" aria-controls="collapse-more3">Bagaimana saya bisa mengecek resi? 
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div id="collapse-more3" class="collapse" aria-labelledby="more" data-parent="#more">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                          </div>
+                        </div>
+                      </div>
+                      <!--[end:loop]-->
+                    </div>
+                  </div> 
+                </div><!--[end:row]-->
+              </div> <!--[end:entry content]--> 
             </div>
           </div>
         </div>  
@@ -124,73 +345,14 @@
     </section>
    
     <style>
-     
-  
-    .myaccount .list-group-item.active{
-      background: transparent;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-    .myaccount .account-summary .row-summary{
-      border-bottom: 1px solid var(--grey);
-    }
-    .myaccount .account-summary .row-summary:last-child{
-      border-bottom: 0;
-    }
-    .myaccount .account-summary .row-summary .btn-outline-dark:hover{
-      background: rgba(var(--orange));
-      border-color: rgba(var(--orange));
-    }
-    .myaccount .account-summary .row-head .head-address{
-      justify-content: space-evenly;
-    }
-    .myaccount .account-summary .row-head div:nth-child(3n+1){
-      flex-grow: 1.3;
-    }
-    .myaccount .account-summary .row-head div:nth-child(3n+2){
-      flex-grow: 2.2;
-    }
-    .myaccount .account-summary .row-head div:nth-child(3n+3){
-      flex-grow: 2.6;
-    }
-    .myaccount .account-summary .flex-grow-2{
-      flex-grow: 2;
-    }
-    .myaccount .half-column{
-     flex-basis:50%;
-    }
-    .myaccount .quarter-column{
-      flex-basis: 25%;
-    }
-
-      .form-password .la-eye:before,
-      .form-password .la-eye-slash:before{
-        color: var(--dark);
-        margin-right: 10px;
-        font-family: 'Line Awesome Free' !important;
-        font-size: 20px;
-        font-weight: 900;
+      .accordionPannelActive {
+        color: var(--theme-dark) !important;
       }
-      .form-password .text-show,
-      .form-password .text-hide{
+      .accordion .media-body{
         font-size: 12px;
-        font-family: 'Heebo', sans-serif;
       }
-      .form-password .las{
-        color: var(--dark);
-      }
-      .text-show, .text-hide{
-        position: relative;
-      }
-      .text-show:after{
-      content: "show";
-      position: relative;
-      
-      }
-      .text-hide:after{
-        content: "hide";
-        position: relative;
-      }
+  
+       
     </style>
    
     <!-- Optional JavaScript -->
@@ -199,7 +361,20 @@
     <script src="assets/vendor/popper/popper.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script>
-    
+      $(function() {
+        $('a.accordion-toggle').click(function(e) {
+          e.preventDefault();
+          if (!$(this).parent().hasClass('accordionPannelActive')) {
+            $('.media-heading').removeClass('accordionPannelActive').find('a').removeClass(' font-weight-bold');
+            //$('.media-heading').addClass('color-lightgrey');
+            $(this).parent().addClass('accordionPannelActive').find('a').addClass(' font-weight-bold');
+          } else {
+
+            $('.media-heading').removeClass('accordionPannelActive').next().removeClass('accordionPannelActive');
+            $(this).parent().find('a').removeClass('accordionPannelActive');
+          }
+        });
+      });
     </script>
   </body>
 </html>

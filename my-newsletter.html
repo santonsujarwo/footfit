@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/theme.css" />
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
@@ -41,83 +40,77 @@
               
             </div>
             <div class="entry-content"><!--[start:entry content]-->
-                <div class="row mb-3">
-                  <div class="col-lg-6 col-12">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Your fashion fix</label>
-                    </div>
-                    <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
+              <div class="row mb-3">
+                <div class="col-lg-6 col-12">
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="fashionfix">
+                    <label class="custom-control-label font-weight-bold" for="fashionfix">Your fashion fix</label>
                   </div>
-                  <div class="col-lg-6 col-12">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Surverys</label>
-                    </div>
-                    <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
+                  <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="surveys">
+                    <label class="custom-control-label font-weight-bold" for="surveys">Surverys</label>
+                  </div>
+                  <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-lg-6 col-12">
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="recommendations">
+                    <label class="custom-control-label font-weight-bold" for="recommendations">Your recommendations</label>
+                  </div>
+                  <p>Size Reminder Confirmation</p>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="sizereminders">
+                    <label class="custom-control-label font-weight-bold" for="sizereminders">Size Reminder Confirmation</label>
+                  </div>
+                  <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-lg-6 col-12">
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="offersale">
+                    <label class="custom-control-label font-weight-bold" for="offersale">Your offers &amp; sales</label>
+                  </div>
+                  <p>Size Reminder Confirmation</p>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="itemalert">
+                    <label class="custom-control-label font-weight-bold" for="itemalert">Your item alerts</label>
+                  </div>
+                  <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
+                </div>
+              </div>
+              <h2 class="font-weight-bold">What are you more interested in?</h2>
+              <div class="row mb-3">
+                <div class="col-3">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="womanapparel" name="apparelinterested" class="custom-control-input">
+                    <label class="custom-control-label font-weight-bold" for="womanapparel">Women's Apparel</label>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-lg-6 col-12">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Your recommendations</label>
-                    </div>
-                    <p>Size Reminder Confirmation</p>
-                  </div>
-                  <div class="col-lg-6 col-12">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Size Reminder Confirmation</label>
-                    </div>
-                    <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
+                <div class="col-3">
+                  <div class="custom-control custom-radio custom-control-inline quarter-column">
+                    <input type="radio" id="menapparel" name="apparelinterested" class="custom-control-input">
+                    <label class="custom-control-label font-weight-bold" for="menapparel">Men's Apparel</label>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-lg-6 col-12">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Your offers &amp; sales</label>
-                    </div>
-                    <p>Size Reminder Confirmation</p>
+                <div class="col-3">
+                  <div class="custom-control custom-radio custom-control-inline quarter-column">
+                    <input type="radio" id="kidapparel" name="apparelinterested" class="custom-control-input">
+                    <label class="custom-control-label font-weight-bold" for="kidapparel">Kid's Apparel</label>
                   </div>
-                  <div class="col-lg-6 col-12">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Your item alerts</label>
-                    </div>
-                    <p>Up your game with news on exclusive launches, seasonal must-haves and new brands.</p>
-                  </div>
-                </div>
-             <!--[end: row-summary]-->
-            
-                <h2 class="font-weight-bold">What are you more interested in?</h2>
-                <div class="row mb-3">
-                  <div class="col-3">
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadioInline1">Women's Apparel</label>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="custom-control custom-radio custom-control-inline quarter-column">
-                      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadioInline2">Men's Apparel</label>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="custom-control custom-radio custom-control-inline quarter-column">
-                      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadioInline2">Kid's Apparel</label>
-                    </div>
-                  </div>  
-                </div>
-                <a href="#" class="btn btn-primary">Subscribe to the FootFit Newsletter</a>
-                <small class="d-block">By clicking the button above, you agree that we may process your information in accordance with our Privacy Policy.</small>
-           
-
-
-              
+                </div>  
+              </div>
+              <a href="#" class="btn btn-primary mb-2">Subscribe to the FootFit Newsletter</a>
+              <small class="d-block">By clicking the button above, you agree that we may process your information in accordance with our Privacy Policy.</small>
             </div><!--[end:entry content]-->
           </div>
         </div>  
@@ -125,7 +118,9 @@
     </section>
    
     <style>
-     
+     .myaccount#newsletter .custom-radio .custom-control-label{
+      padding-top: 2px;
+     }
   
     </style>
    
@@ -134,9 +129,5 @@
     <script src="assets/vendor/jquery/jquery-3.4.1.slim.min.js"></script>
     <script src="assets/vendor/popper/popper.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap-select.min.js"></script>
-    <script>
-    
-    </script>
   </body>
 </html>

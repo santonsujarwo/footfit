@@ -14,7 +14,7 @@
     <title>Whistlist</title>
   </head>
   <body>
-    <section class="myaccount my-5">
+    <section class="myaccount my-5" id="wishlists">
       <div class="container">
         <div class="row flex-lg-row flex-column-reverse">
           <div class="col-lg-2 col-md-2 col-12 left-column">
@@ -35,43 +35,69 @@
           <div class="col-lg-10 col-md-10 col-12 right-column">
             <div class="page-header row align-items-center mb-3">
               <div class="col-lg-8">
-                <h2 class="page-title font-weight-bold">Whistlists</h2>
-                <input type="text" value="" placeholder="search wishlists" />
+                <div class="row">
+                  <div class="col-lg-12 col-12">
+                    <div class="d-flex flex-row">
+                      <div class="thumb d-block d-lg-none align-items-center mr-4">
+                        <img src="assets/images/wish-hover.png" alt="address" class="img-fluid" width="32" />
+                      </div>
+                      <div class="d-block">
+                        <h2 class="page-title font-weight-bold">Whislists</h2>
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="col-lg-4 col-12">
+                    <div class="form-group form-search">
+                      <input type="text" class="form-control rounded-0" value="" placeholder="search wishlists" />
+                    </div> 
+                  </div>
+                </div>  
               </div>
-              <div class="col-lg-4">
-                <a href="#" class="btn btn-ourline-dark">Manage Whistlists</a>
+              <div class="col-lg-4 text-lg-right">
+                <a href="#" class="btn btn-outline-dark btn-xs-block rounded-0 mt-4">Manage Whistlists</a>
               </div>
             </div>
             <div class="entry-content"><!--[start:entry content]-->
-                <div class="row">
-                  <div class="col-4">
-                    <div class="product-thumbnail"><img src="assets/images/product1.jpg" alt="thumb" class="img-fluid" /></div>  
-                    <div class="product-summary mt-4">
-                      <h4 class="title-product font-weight-bold">RICOSTA - KNT SERIES</h4>
-                      <div class="price-product d-flex align-items-center">
-                        <span class="price-tags">IDR 295.000</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="product-thumbnail"><img src="assets/images/product1.jpg" alt="thumb" class="img-fluid" /></div>  
-                    <div class="product-summary mt-4">
-                      <h4 class="title-product font-weight-bold">RICOSTA - KNT SERIES</h4>
-                      <div class="price-product d-flex align-items-center">
-                        <span class="price-tags">IDR 295.000</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="product-thumbnail"><img src="assets/images/product1.jpg" alt="thumb" class="img-fluid" /></div>  
-                    <div class="product-summary mt-4">
-                      <h4 class="title-product font-weight-bold">RICOSTA - KNT SERIES</h4>
-                      <div class="price-product d-flex align-items-center">
-                        <span class="price-tags">IDR 295.000</span>
-                      </div>
+              <div class="row">
+                <div class="col-lg-4 col-6 mb-5">
+                  <div class="product-thumbnail position-relative">
+                    <a href="#" class="btn-wishlist">wishlist</a>
+                    <img src="assets/images/product1.jpg" alt="thumb" class="img-fluid" />
+                    <div class="cut-price color-white bg-orange font-weight-bold">-15%</div>
+                  </div>  
+                  <div class="product-summary mt-4">
+                    <h4 class="title-product font-weight-bold">RICOSTA - KNT SERIES</h4>
+                    <div class="price-product">
+                      <span class="price-tags">IDR 295.000</span>
+                       <span class="linethrough">IDR 350.000</span>
                     </div>
                   </div>
                 </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product-thumbnail position-relative">
+                    <a href="#" class="btn-wishlist active">wishlist</a>
+                    <img src="assets/images/product1.jpg" alt="thumb" class="img-fluid" />
+                  </div>  
+                  <div class="product-summary mt-4">
+                    <h4 class="title-product font-weight-bold">RICOSTA - KNT SERIES</h4>
+                    <div class="price-product d-flex align-items-center">
+                      <span class="price-tags">IDR 295.000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product-thumbnail position-relative">
+                    <a href="#" class="btn-wishlist active">wishlist</a>
+                    <img src="assets/images/product1.jpg" alt="thumb" class="img-fluid" />
+                  </div>  
+                  <div class="product-summary mt-4">
+                    <h4 class="title-product font-weight-bold">RICOSTA - KNT SERIES</h4>
+                    <div class="price-product d-flex align-items-center">
+                      <span class="price-tags">IDR 295.000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div><!--[start:entry content]-->
           </div>
         </div>  
@@ -79,7 +105,15 @@
     </section>
    
     <style>
-    
+   
+    .myaccount#wishlists .product-summary .price-product .price-tags,
+    .myaccount#wishlists .product-summary .title-product{
+      font-size: 14px;
+    }
+    @media(max-width: 480px){
+      
+     
+    }
     </style>
    
     <!-- Optional JavaScript -->
